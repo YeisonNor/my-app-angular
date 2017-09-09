@@ -3,12 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { CustomersModule } from './customers/customers.module';
+import { MenuComponent } from './menu/menu.component';
+import { CurrentOptionComponent } from './current-option/current-option.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    CurrentOptionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CustomersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
